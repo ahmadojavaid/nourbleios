@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Font Awesome 5 Pro-Regular-400.otf">
+            <string>FontAwesome5Pro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ListDevicesCell" customModule="NOUR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwN-F7-cfc" customClass="APLabel" customModule="NOUR" customModuleProvider="target">
+                        <rect key="frame" x="14" y="12" width="223" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="regular"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="darkText"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHd-Mb-EKb" customClass="APLabel" customModule="NOUR" customModuleProvider="target">
+                        <rect key="frame" x="240" y="12" width="42" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="setWeight" value="regular"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="setSize">
+                                <integer key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="setColor" value="grayText"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2I-TN-lP1">
+                        <rect key="frame" x="285" y="0.0" width="30" height="44"/>
+                        <fontDescription key="fontDescription" name="FontAwesome5Pro-Regular" family="Font Awesome 5 Pro" pointSize="20"/>
+                        <state key="normal" title="info-circle"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="zwN-F7-cfc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2rh-K7-Ckb"/>
+                    <constraint firstAttribute="trailing" secondItem="e2I-TN-lP1" secondAttribute="trailing" constant="5" id="6rO-Vj-pkT"/>
+                    <constraint firstItem="zwN-F7-cfc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="Ibd-kO-EUR"/>
+                    <constraint firstItem="e2I-TN-lP1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="J24-4R-IBY"/>
+                    <constraint firstItem="SHd-Mb-EKb" firstAttribute="leading" secondItem="zwN-F7-cfc" secondAttribute="trailing" constant="3" id="Ple-Io-MhC"/>
+                    <constraint firstItem="SHd-Mb-EKb" firstAttribute="centerY" secondItem="zwN-F7-cfc" secondAttribute="centerY" id="TFc-tb-q56"/>
+                    <constraint firstAttribute="bottom" secondItem="e2I-TN-lP1" secondAttribute="bottom" id="fU9-RL-lSJ"/>
+                    <constraint firstItem="e2I-TN-lP1" firstAttribute="leading" secondItem="SHd-Mb-EKb" secondAttribute="trailing" constant="3" id="lWV-pU-wIt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnInfo" destination="e2I-TN-lP1" id="Qf1-ir-R8I"/>
+                <outlet property="lblLeft" destination="zwN-F7-cfc" id="zWZ-Vj-utv"/>
+                <outlet property="lblRight" destination="SHd-Mb-EKb" id="If1-C3-L6a"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="100"/>
+        </tableViewCell>
+    </objects>
+</document>

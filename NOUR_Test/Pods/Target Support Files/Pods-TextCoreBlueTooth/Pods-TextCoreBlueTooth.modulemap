@@ -1,0 +1,6 @@
+framework module Pods_TextCoreBlueTooth {
+  umbrella header "Pods-TextCoreBlueTooth-umbrella.h"
+
+  export *
+  module * { export * }
+}
